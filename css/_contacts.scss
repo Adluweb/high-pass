@@ -1,0 +1,188 @@
+.contacts {
+  padding-top: 28px;
+
+  &__title {
+    @include gilroy-bold;
+  }
+
+  &__container {
+    max-width: 1320px;
+    margin: 0px auto 76px;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 66% 31%;
+    grid-template-rows: 460px;
+    gap: 30px;
+  }
+
+  &__map {
+    max-width: 100%;
+    position: relative;
+
+    &-close {
+      position: absolute;
+      top: 24px;
+      right: 20px;
+      cursor: pointer;
+    }
+
+    &-info {
+      max-width: 409px;
+      padding: 173px 55px 20px 60px;
+      position: absolute;
+      top: 0px;
+      bottom: 0;
+      color: $white;
+      background: rgba(32, 32, 32, 0.85);
+      transition: 0.2s ease-in-out;
+    }
+
+    &-title {
+      margin: 0 0 4px;
+      @include gilroy-reg;
+      @include transition;
+      font-size: 24px;
+      cursor: pointer;
+
+      &:hover {
+        @include effects;
+      }
+    }
+
+    &-text {
+      margin: 0;
+      font-size: 16px;
+      line-height: 28px;
+      color: $light-grey;
+    }
+
+    &-tel {
+      @include gilroy-reg;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &-title {
+      @include gilroy-reg;
+      margin: -5px 0 5px;
+      font-size: 24px;
+    }
+
+    &-text {
+      @include roboto-reg;
+      margin-bottom: 15px;
+      color: $pale-grey;
+      line-height: 22px;
+    }
+
+    &-name,
+    &-mail {
+      @include roboto-reg;
+      @include input;
+      min-height: 50px;
+      max-width: 410px;
+      width: 100%;
+      padding: 15px 10px 15px 25px;
+      margin-bottom: 20px;
+      font-size: 16px;
+      color: $pale-grey;
+      background-color: $background-grey;
+      border: 1px solid transparent;
+    }
+
+    &-comment {
+      @include roboto-reg;
+      @include input;
+      min-height: 150px;
+      width: 100%;
+      max-width: 410px;
+      padding: 15px 23px;
+      margin-bottom: 15px;
+      font-size: 16px;
+      color: $pale-grey;
+      background-color: $background-grey;
+      border: 1px solid transparent;
+      resize: none;
+    }
+
+    &-btn {
+      @include roboto-bold;
+      font-size: 16px;
+      padding: 15px 20px;
+      color: $white;
+      background-color: #ff6e30;
+      @include transition;
+      @include send;
+    }
+  }
+
+  &__form {
+    max-width: 500px;
+  }
+}
+
+.min {
+  max-width: 210px;
+  padding: 91px 10px 20px 10px;
+}
+
+@media (max-width: 1024px) {
+  .contacts {
+    &__content {
+      grid-template-columns: 60% 37%;
+    }
+
+    &__map-info {
+      top: auto;
+      padding: 20px;
+      max-width: 100%;
+    }
+
+    &__map-text {
+      padding-right: 200px;
+    }
+  }
+
+  .min {
+    opacity: 0.15;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts {
+    &__content {
+      grid-template-columns: 100%;
+    }
+
+    &__info-text {
+      max-width: 450px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .contacts {
+    &__map-text {
+      padding-right: 50px;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .contacts {
+    &__map-text {
+      padding-right: 20px;
+    }
+
+    &__info-name,
+    &__info-mail {
+      padding-right: 10px;
+    }
+  }
+}

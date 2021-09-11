@@ -1,0 +1,296 @@
+.projects {
+  position: relative;
+  max-width: 1320px;
+  margin: 0 auto 69px;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    gap: 30px;
+    margin-bottom: 53px;
+  }
+
+  &__title {
+    margin: 0 auto;
+    padding-top: 41px;
+    padding-left: 15px;
+    margin-bottom: 11px;
+    @include gilroy-bold;
+  }
+
+  &__text-label {
+    @include label;
+    top: 6px;
+    right: 11px;
+  }
+
+  &__small-date {
+    font-size: 12px;
+    color: $pale-grey;
+  }
+
+  &__small-img {
+    margin-bottom: 16px;
+  }
+
+  &__small-text {
+    @include small-text;
+  }
+
+  &__small1 {
+    @include small-grid;
+  }
+
+  &__small2 {
+    @include small-grid;
+  }
+
+  &__small3-1 {
+    display: none;
+    @include small-grid;
+  }
+
+  &__small3 {
+    @include small-grid;
+  }
+
+  &__large-1 {
+    @include large-grid;
+    background-image: url("../images/first-slider/large-1.jpg");
+  }
+
+  &__large-content {
+    min-height: 180px;
+  }
+
+  &__large-title {
+    @include gilroy-bold;
+    margin-bottom: 7px;
+    font-size: 24px;
+    line-height: 24px;
+    color: $white;
+  }
+
+  &__large-text {
+    @include roboto-reg;
+    line-height: 22px;
+    color: $white;
+  }
+
+  &__large-btn {
+    @include roboto-bold;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: transparent;
+    color: $white;
+    border: 3px solid #ff6e30;
+    @include transition;
+
+    &:hover {
+      background-color: $orange;
+    }
+
+    &:active {
+      background-color: $active;
+    }
+
+    &:focus {
+      background-color: $brown;
+    }
+  }
+
+  &__large-date {
+    margin-bottom: 6px;
+    color: $white;
+    font-size: 12px;
+  }
+
+  &__large-2 {
+    @include large-grid;
+    justify-content: space-between;
+    background-image: url("../images/first-slider/large-2.jpg");
+  }
+
+  &__large-btn {
+    color: $white;
+  }
+
+  &__medium-date {
+    font-size: 12px;
+    color: $pale-grey;
+  }
+
+  &__medium1 {
+    @include medium-grid;
+  }
+
+  &__medium2 {
+    @include medium-grid;
+  }
+
+  &__medium-text {
+    margin-bottom: 20px;
+  }
+
+  &__medium-img {
+    margin-bottom: 16px;
+  }
+
+  &__buttons {
+    position: absolute !important;
+    bottom: 0;
+    right: 44%;
+    display: flex;
+    justify-content: center;
+    padding-left: 28px;
+  }
+
+  &__button {
+    padding: 7px 10px;
+    margin-right: 30px;
+    font-size: 16px;
+    color: $white;
+    border: none;
+    background-color: $light-grey;
+    cursor: pointer;
+    @include transition;
+
+    &:hover {
+      color: $orange;
+      background-color: $background-grey;
+    }
+  }
+}
+
+.is-active {
+  background-color: $orange;
+}
+
+@include second-slider;
+
+@media (max-width: 1024px) {
+  .projects {
+    &__title {
+      padding-left: 30px;
+    }
+
+    &__large-1 {
+      grid-column: span 8;
+    }
+
+    &__large-2 {
+      grid-column: span 8;
+      order: 3;
+    }
+
+    &__small1 {
+      grid-column: span 3;
+    }
+
+    &__small2 {
+      grid-column: span 3;
+    }
+
+    &__small3 {
+      grid-column: span 3;
+    }
+
+    &__small3-1 {
+      display: block;
+      grid-column: span 3;
+    }
+
+    &__medium1 {
+      grid-column: span 4;
+      order: 0;
+    }
+    &__medium2 {
+      grid-column: span 4;
+    }
+    &__buttons {
+      right: 40%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .projects {
+    &__large-1 {
+      padding: 20px 20px;
+      grid-column: span 12;
+      background-image: url("../images/first-slider/large-1-768.jpg");
+    }
+    &__large-2 {
+      grid-column: span 12;
+      background-image: url("../images/first-slider/large-2-768.jpg");
+    }
+
+    &__medium1,
+    &__medium2 {
+      grid-column: span 6;
+    }
+
+    &__small1,
+    &__small2,
+    &__small3 {
+      display: flex;
+      flex-direction: column;
+      grid-column: span 4;
+    }
+
+    &__small3-1 {
+      display: none;
+    }
+
+    &__buttons {
+      top: 40px;
+      bottom: 95%;
+      right: 0;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .projects {
+    &__container {
+      grid-template-columns: repeat(12, 10px);
+    }
+
+    &__large-1,
+    &__large-2 {
+      padding: 20px 20px;
+      grid-column: span 7;
+    }
+
+    &__medium1,
+    &__medium2 {
+      grid-column: span 7;
+    }
+
+    &__small1 {
+      grid-column: span 6;
+    }
+
+    &__small2 {
+      grid-column: span 6;
+      grid-row: 2/3;
+    }
+
+    &__small3 {
+      grid-column: span 6;
+      grid-row: 3/4;
+    }
+
+    &__button {
+      margin-right: 13px;
+    }
+
+    &__buttons {
+      right: 0;
+      top: 40px;
+      bottom: 97%;
+      right: 0;
+    }
+  }
+}
