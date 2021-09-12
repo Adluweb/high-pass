@@ -1566,7 +1566,7 @@ ul {
 .services__container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 66% 35%;
+  -ms-grid-columns: 67% 35%;
       grid-template-columns: 66% 35%;
   -ms-grid-rows: 481px 373px;
       grid-template-rows: 481px 373px;
@@ -1939,7 +1939,7 @@ ul {
 }
 
 .border__bottom {
-  top: 17px;
+  top: 18px;
   left: 147px;
   position: absolute;
   display: inline-block;
