@@ -1664,7 +1664,7 @@ ul {
   display: inline-block;
   height: 14px;
   width: 19px;
-  background-image: url("./images/svg/arrow.svg");
+  background-image: url("./images/arrow.svg");
   -webkit-transition: linear 0.2s;
   transition: linear 0.2s;
 }
@@ -1672,7 +1672,7 @@ ul {
 .services__content-link:hover:after {
   height: 14px;
   width: 27px;
-  background-image: url("./images/svg/arrow-h.svg");
+  background-image: url("./images/arrow-h.svg");
 }
 
 .services__swipers {
@@ -1870,7 +1870,7 @@ ul {
   display: inline-block;
   height: 14px;
   width: 19px;
-  background-image: url("./images/svg/arrow.svg");
+  background-image: url("./images/arrow.svg");
   -webkit-transition: linear 0.2s;
   transition: linear 0.2s;
 }
@@ -1878,7 +1878,7 @@ ul {
 .retouch__content-link:hover:after {
   height: 14px;
   width: 27px;
-  background-image: url("./images/svg/arrow-h.svg");
+  background-image: url("./images/arrow-h.svg");
 }
 
 @media (max-width: 1024px) {
@@ -1939,8 +1939,8 @@ ul {
 }
 
 .border__bottom {
-  top: 18px;
-  left: 149px;
+  top: 17px;
+  left: 147px;
   position: absolute;
   display: inline-block;
   width: 133px;
