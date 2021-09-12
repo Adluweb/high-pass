@@ -1939,7 +1939,7 @@ ul {
 }
 
 .border__bottom {
-  top: 18px;
+  top: 100%;
   left: 147px;
   position: absolute;
   display: inline-block;
