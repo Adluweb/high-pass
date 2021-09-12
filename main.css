@@ -1567,7 +1567,7 @@ ul {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 67% 35%;
-      grid-template-columns: 66% 35%;
+      grid-template-columns: 67% 35%;
   -ms-grid-rows: 481px 373px;
       grid-template-rows: 481px 373px;
   gap: 36px;
