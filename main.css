@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Gilroy';
-  src: url("../fonts/TTFirsNeue-Regular.woff2") format("woff2");
+  src: url("./fonts/TTFirsNeue-Regular.woff2") format("woff2");
   font-display: swap;
   font-weight: 400;
   font-style: normal;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: 'Gilroy';
-  src: url("../fonts/TTFirsNeue-Bold.woff2") format("woff2");
+  src: url("./fonts/TTFirsNeue-Bold.woff2") format("woff2");
   font-display: swap;
   font-weight: 700;
   font-style: normal;
@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: 'Roboto';
-  src: url("../fonts/Roboto-Regular.woff2");
+  src: url("./fonts/Roboto-Regular.woff2");
   src: local("Roboto-Regular"), format("woff2");
   font-weight: 400;
   font-style: normal;
@@ -25,7 +25,7 @@
 
 @font-face {
   font-family: 'Roboto';
-  src: url("../fonts/Roboto-Bold.woff2");
+  src: url("./fonts/Roboto-Bold.woff2");
   src: local("Roboto-Bold"), format("woff2");
   font-weight: 700;
   font-style: bold;
@@ -490,7 +490,7 @@ ul {
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
   grid-row: 1/4;
-  background-image: url("../images/workshop/img1.jpg");
+  background-image: url("./images/workshop/img1.jpg");
   background-repeat: no-repeat;
 }
 
@@ -602,7 +602,7 @@ ul {
         grid-template-rows: 30px 286px 296px;
   }
   .workshop__img-1 {
-    background-image: url("../images/workshop/img1-1024.jpg");
+    background-image: url("./images/workshop/img1-1024.jpg");
   }
   .workshop__img3 {
     -ms-flex-item-align: center;
@@ -635,7 +635,7 @@ ul {
     font-size: 22px;
   }
   .workshop__img-1 {
-    background-image: url("../images/workshop/img1-768.jpg");
+    background-image: url("./images/workshop/img1-768.jpg");
   }
 }
 
@@ -973,7 +973,7 @@ ul {
   position: relative;
   padding: 23px 306px 34px 30px;
   grid-column: span 6;
-  background-image: url("../images/first-slider/large-1.jpg");
+  background-image: url("./images/first-slider/large-1.jpg");
 }
 
 .projects__large-content {
@@ -1046,7 +1046,7 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-image: url("../images/first-slider/large-2.jpg");
+  background-image: url("./images/first-slider/large-2.jpg");
 }
 
 .projects__large-btn {
@@ -1191,7 +1191,7 @@ ul {
   position: relative;
   padding: 23px 306px 34px 30px;
   grid-column: span 6;
-  background-image: url("../images/second-slider/img1.jpg");
+  background-image: url("./images/second-slider/img1.jpg");
 }
 
 .second-slider__large-content {
@@ -1264,7 +1264,7 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-image: url("../images/second-slider/img2.jpg");
+  background-image: url("./images/second-slider/img2.jpg");
 }
 
 .second-slider__medium-date {
@@ -1337,14 +1337,14 @@ ul {
   }
   .second-slider__large-1 {
     grid-column: span 12;
-    background-image: url("../images/second-slider/img1-768.jpg");
+    background-image: url("./images/second-slider/img1-768.jpg");
     -webkit-box-ordinal-group: 8;
         -ms-flex-order: 7;
             order: 7;
   }
   .second-slider__large-2 {
     grid-column: span 12;
-    background-image: url("../images/second-slider/img2-768.jpg");
+    background-image: url("./images/second-slider/img2-768.jpg");
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
             order: 4;
@@ -1480,11 +1480,11 @@ ul {
   .projects__large-1 {
     padding: 20px 20px;
     grid-column: span 12;
-    background-image: url("../images/first-slider/large-1-768.jpg");
+    background-image: url("./images/first-slider/large-1-768.jpg");
   }
   .projects__large-2 {
     grid-column: span 12;
-    background-image: url("../images/first-slider/large-2-768.jpg");
+    background-image: url("./images/first-slider/large-2-768.jpg");
   }
   .projects__medium1, .projects__medium2 {
     grid-column: span 6;
@@ -1656,7 +1656,7 @@ ul {
   display: inline-block;
   height: 14px;
   width: 19px;
-  background-image: url("../images/svg/arrow1.svg");
+  background-image: url("./images/arrow.svg");
   -webkit-transition: linear 0.2s;
   transition: linear 0.2s;
 }
@@ -1664,7 +1664,7 @@ ul {
 .services__content-link:hover:after {
   height: 14px;
   width: 27px;
-  background-image: url("../images/svg/arrow-h.svg");
+  background-image: url("./images/arrow-h.svg");
 }
 
 .services__swipers {
@@ -1703,7 +1703,7 @@ ul {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
-  background-image: url("../images/services/promo.jpg");
+  background-image: url("./images/services/promo.jpg");
   background-repeat: no-repeat;
 }
 
@@ -1862,7 +1862,7 @@ ul {
   display: inline-block;
   height: 14px;
   width: 19px;
-  background-image: url("../images/svg/arrow1.svg");
+  background-image: url("./images/arrow.svg");
   -webkit-transition: linear 0.2s;
   transition: linear 0.2s;
 }
@@ -1870,7 +1870,7 @@ ul {
 .retouch__content-link:hover:after {
   height: 14px;
   width: 27px;
-  background-image: url("../images/svg/arrow-h.svg");
+  background-image: url("./images/arrow-h.svg");
 }
 
 @media (max-width: 1024px) {
@@ -1976,7 +1976,7 @@ ul {
   }
   .services__promo {
     position: relative;
-    background-image: url("../images/services/promo-768.jpeg");
+    background-image: url("./images/services/promo-768.jpeg");
     -ms-grid-column: 1;
     grid-column: 1;
     -ms-grid-row: 3;
@@ -2083,7 +2083,7 @@ ul {
         grid-template-columns: 500px;
   }
   .services__promo {
-    background-image: url("../images/services/promo.jpg");
+    background-image: url("./images/services/promo.jpg");
     background-size: cover;
   }
   .services__promo-block {
@@ -2125,7 +2125,7 @@ ul {
 }
 
 .master__img {
-  background-image: url("../images/master/master.jpg");
+  background-image: url("./images/master/master.jpg");
   background-repeat: no-repeat;
 }
 
@@ -2233,7 +2233,7 @@ ul {
         grid-template-columns: repeat(2, 100%);
   }
   .master__img {
-    background-image: url("../images/master/master-1024.jpg");
+    background-image: url("./images/master/master-1024.jpg");
   }
 }
 
@@ -2248,7 +2248,7 @@ ul {
     padding-right: 20px;
   }
   .master__img {
-    background-image: url("../images/master/master-1024.jpg");
+    background-image: url("./images/master/master-1024.jpg");
   }
 }
 
